@@ -27,13 +27,13 @@ public class C1_Get_ApiSorgulama {
             // 1- Endpoint hazırlama( Request Body verilirse o da burada hazırlanır)
             String url = "https://restful-booker.herokuapp.com/booking/10";
 
-            // 2- Umulan bir data olmadığı için expected body hazırlanmadı
+            // 2- Beklenen bir data olmadığı için expected body hazırlanmadı
 
 
             // 3- Dönen cevap kayıt altına alınır
             Response response = given().when().get(url);
 
-            //4-Assertion İşlemlerine geçilir (Manuel)
+            //4-Assertion İşlemlerine geçilir (Manuel isteniyor)
 
             System.out.println("Status Code: "+response.getStatusCode());
             System.out.println("Content Type: "+response.getContentType());
