@@ -32,7 +32,7 @@ public class C3_JsonObjesiOlusturma {
             JSONObject data=new JSONObject();
             data.put("firstname","Jim");
             data.put("lastname","Brown");
-            data.put( "bookingdates",innerData);
+            data.put("bookingdates",innerData);
             data.put("totalprice",111);
             data.put("depositpaid",true);
             data.put("additionalneeds","Breakfast");

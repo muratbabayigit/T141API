@@ -44,12 +44,12 @@ public class C09_Post_JsonPathIleBodyTesti {
         innerData.put("checkout", "2021-06-10");
 
         JSONObject reqBody = new JSONObject();
-        reqBody.put("firstname", "Ahmet");
-        reqBody.put("lastname", "Bulut");
+        reqBody.put("firstname", "Murat");
+        reqBody.put("lastname", "Yiğit");
         reqBody.put("totalprice", 500);
         reqBody.put("depositpaid", false);
         reqBody.put("bookingdates", innerData);
-        reqBody.put("additionalneeds", "wi-fi");
+        reqBody.put("additionalneeds", "Breakfast, wi-fi");
 
 
         Response response=given().contentType(ContentType.JSON).when().body(reqBody.toString()).post(url);
@@ -57,7 +57,7 @@ public class C09_Post_JsonPathIleBodyTesti {
         response.then().assertThat()
                 .statusCode(200)
                 .contentType("application/json")
-                .body("booking.firstname", equalTo("Ahmet"),"booking.lastname",equalTo("Bulut"),
+                .body("booking.firstname", equalTo("Murat"),"booking.lastname",equalTo("Yiğit"),
                         "booking.totalprice",equalTo(500),"booking.depositpaid",equalTo(false),
                             "booking.bookindates.checkin",equalTo(null),
                             "booking.bookingdates.checkout",equalTo("2021-06-10"));

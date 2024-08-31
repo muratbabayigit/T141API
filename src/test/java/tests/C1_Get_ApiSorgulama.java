@@ -17,10 +17,10 @@ public class C1_Get_ApiSorgulama {
      */
 
     /*
-        1- Endpoint hazırlama( Request Body verilirse o da burada hazırlanır)
-        2- Eğer verilmişse Expected Body hazırlanır( verilmemişse bu adımda bir işlem yapılmaz)
-        3- Donen Response kayıt altına alınır
-        4- Donen Response ile beklenen body assert edilir.
+      // 1- Endpoint hazırlama( Request Body verilirse o da burada hazırlanır)
+      // 2- Eğer verilmişse Expected Body hazırlanır( verilmemişse bu adımda bir işlem yapılmaz)
+      // 3- Donen Response kayıt altına alınır
+      // 4- Donen Response ile beklenen body assert edilir.
      */
         @Test
             public void test1() {
