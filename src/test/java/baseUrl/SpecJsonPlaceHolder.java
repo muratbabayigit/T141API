@@ -10,7 +10,7 @@ public class SpecJsonPlaceHolder {
     protected RequestSpecification specJsonPlaceHolder;
 
 @BeforeTest
-    public void test(){
+    public void setUp (){
 
         specJsonPlaceHolder=new RequestSpecBuilder().setBaseUri("https://jsonplaceholder.typicode.com").build();
 }
