@@ -2,6 +2,9 @@ package testDatas;
 
 import org.json.JSONObject;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class HerOkuAppData {
         /*
         {
@@ -34,6 +37,22 @@ public class HerOkuAppData {
     return reqData;
     }
 
+    public static Map<String, Object> reqDataOlsuturMAP(){
+        Map<String, Object> innerMAP=new HashMap<>();
+        innerMAP.put("checkin","2021-06-01");
+        innerMAP.put("checkout","2021-06-10");
+
+        Map<String, Object> reqMAP=new HashMap<>();
+        reqMAP.put ("firstname","Ahmet");
+        reqMAP.put("lastname","Bulut");
+        reqMAP.put("totalprice",500);
+        reqMAP.put("depositpaid",false);
+        reqMAP.put("bookingdates",innerMAP);
+        reqMAP.put("additionalneeds","wi-fi");
+
+        return reqMAP;
+    }
+
     /*
     Expected response body
                         {
@@ -58,4 +77,14 @@ public class HerOkuAppData {
         expData.put("booking",reqDataOlustur());
         return expData;
     }
+
+    public static Map<String, Object> expMapDataOlustur(){
+        Map<String, Object> expMap=new HashMap<>();
+        expMap.put("bookingid",24);
+        expMap.put("booking",reqDataOlsuturMAP());
+        return expMap;
+    }
+
+
+
 }

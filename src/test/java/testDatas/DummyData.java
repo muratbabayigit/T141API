@@ -22,10 +22,10 @@ public class DummyData {
         }
  */
         Map<String,Object> data=new HashMap<>();
-        data.put("id",3);
+        data.put("id",3.0);
         data.put("employee_name","Ashton Cox");
-        data.put("employee_salary",86000);
-        data.put("employee_age",66);
+        data.put("employee_salary",86000.0);
+        data.put("employee_age",66.0);
         data.put("profile_image","");
 
         Map<String,Object> mapData=new HashMap<>();

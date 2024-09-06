@@ -49,6 +49,13 @@ public class C23_Get_DeSerialization extends SpecDummy {
             assertEquals(expBodyMAP.get("message"),resMAP.get("message"));
 
 
+          assertEquals(((Map)expBodyMAP.get("data")).get("id"), ((Map)resMAP.get("data")).get("id"));
+          assertEquals(((Map)expBodyMAP.get("data")).get("employee_name"),((Map)resMAP.get("data")).get("employee_name"));
+          assertEquals(((Map)expBodyMAP.get("data")).get("employee_salary"),((Map)resMAP.get("data")).get("employee_salary"));
+          assertEquals(((Map)expBodyMAP.get("data")).get("employee_age"),((Map)resMAP.get("data")).get("employee_age"));
+          assertEquals(((Map)expBodyMAP.get("data")).get("profile_image"),((Map)resMAP.get("data")).get("profile_image"));
+
+
 
 
 
