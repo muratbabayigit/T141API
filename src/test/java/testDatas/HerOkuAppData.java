@@ -45,7 +45,7 @@ public class HerOkuAppData {
         Map<String, Object> reqMAP=new HashMap<>();
         reqMAP.put ("firstname","Ahmet");
         reqMAP.put("lastname","Bulut");
-        reqMAP.put("totalprice",500);
+        reqMAP.put("totalprice",500.0);
         reqMAP.put("depositpaid",false);
         reqMAP.put("bookingdates",innerMAP);
         reqMAP.put("additionalneeds","wi-fi");
@@ -80,7 +80,7 @@ public class HerOkuAppData {
 
     public static Map<String, Object> expMapDataOlustur(){
         Map<String, Object> expMap=new HashMap<>();
-        expMap.put("bookingid",24);
+        expMap.put("bookingid",24.0);
         expMap.put("booking",reqDataOlsuturMAP());
         return expMap;
     }

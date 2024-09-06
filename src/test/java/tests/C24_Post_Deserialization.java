@@ -65,6 +65,12 @@ public class C24_Post_Deserialization extends SpecHerokuApp {
         assertEquals(((Map)expBodyMAP.get("booking")).get("depositpaid"),((Map)resMAP.get("booking")).get("depositpaid"));
         assertEquals(((Map)expBodyMAP.get("booking")).get("additionalneeds"),((Map)resMAP.get("booking")).get("additionalneeds"));
 
+        assertEquals(((Map)((Map)expBodyMAP.get("booking")).get("bookingdates")).get("checkin"),
+                    ((Map)((Map)resMAP.get("booking")).get("bookingdates")).get("checkin"));
+
+        assertEquals(((Map)((Map)expBodyMAP.get("booking")).get("bookingdates")).get("checkout"),
+                ((Map)((Map)resMAP.get("booking")).get("bookingdates")).get("checkout"));
+
 
 
     }
