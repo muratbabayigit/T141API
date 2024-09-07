@@ -32,9 +32,9 @@ public class C26_Post_Pojo extends SpecHerokuApp {
                         "depositpaid":false,
                         "bookingdates":{
                             "checkin":"2021-06-01",
-                            "checkout":"2021-06-10"
-                        ,
+                            "checkout":"2021-06-10",
                         "additionalneeds":"wi-fi"
+                        }
                     }
      */
     @Test
